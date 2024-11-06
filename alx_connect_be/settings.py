@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-3oxs@e1fjxzt$t%fqaf&0s@dp79^g*l4ubu0$cykhrx0wpulg@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "https://alx-connect-y6ho.onrender.com"
