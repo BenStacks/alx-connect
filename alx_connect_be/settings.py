@@ -25,7 +25,18 @@ SECRET_KEY = 'django-insecure-3oxs@e1fjxzt$t%fqaf&0s@dp79^g*l4ubu0$cykhrx0wpulg@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "https://alx-connect-y6ho.onrender.com"
+]
+if DEBUG:
+    ALLOWED_HOSTS = ["*"]
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:8001",
+    "http://127.0.0.1:8001",
+    "https://alx-connect-y6ho.onrender.com"
+]
+
 
 
 # Application definition
